@@ -1,0 +1,614 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "type": "SUV",
+      "model": "Rogue",
+      "year": 2023,
+      "price_per_day": 369.88,
+      "location": "Riyadh",
+      "availability": true
+    },
+    {
+      "id": 2,
+      "type": "Van",
+      "model": "Carnival",
+      "year": 2020,
+      "price_per_day": 398.77,
+      "location": "Riyadh",
+      "availability": true
+    },
+    {
+      "id": 3,
+      "type": "Truck",
+      "model": "Tundra",
+      "year": 2021,
+      "price_per_day": 412.18,
+      "location": "Mecca",
+      "availability": true
+    },
+    {
+      "id": 4,
+      "type": "SUV",
+      "model": "Tucson",
+      "year": 2020,
+      "price_per_day": 157.77,
+      "location": "Mecca",
+      "availability": true
+    },
+    {
+      "id": 5,
+      "type": "Van",
+      "model": "Sienna",
+      "year": 2021,
+      "price_per_day": 317.32,
+      "location": "Dammam",
+      "availability": true
+    },
+    {
+      "id": 6,
+      "type": "Truck",
+      "model": "Silverado",
+      "year": 2023,
+      "price_per_day": 428.99,
+      "location": "Khobar",
+      "availability": true
+    },
+    {
+      "id": 7,
+      "type": "Sedan",
+      "model": "Camry",
+      "year": 2019,
+      "price_per_day": 493.03,
+      "location": "Mecca",
+      "availability": true
+    },
+    {
+      "id": 8,
+      "type": "Sedan",
+      "model": "Camry",
+      "year": 2021,
+      "price_per_day": 335.8,
+      "location": "Dammam",
+      "availability": false
+    },
+    {
+      "id": 9,
+      "type": "SUV",
+      "model": "Rogue",
+      "year": 2022,
+      "price_per_day": 266.15,
+      "location": "Mecca",
+      "availability": false
+    },
+    {
+      "id": 10,
+      "type": "Truck",
+      "model": "Ram",
+      "year": 2019,
+      "price_per_day": 193.18,
+      "location": "Khobar",
+      "availability": true
+    },
+    {
+      "id": 11,
+      "type": "Sedan",
+      "model": "Accord",
+      "year": 2021,
+      "price_per_day": 163.8,
+      "location": "Riyadh",
+      "availability": true
+    },
+    {
+      "id": 12,
+      "type": "Truck",
+      "model": "Silverado",
+      "year": 2019,
+      "price_per_day": 404.12,
+      "location": "Medina",
+      "availability": true
+    },
+    {
+      "id": 13,
+      "type": "Luxury",
+      "model": "A6",
+      "year": 2020,
+      "price_per_day": 235.26,
+      "location": "Dammam",
+      "availability": true
+    },
+    {
+      "id": 14,
+      "type": "Van",
+      "model": "Odyssey",
+      "year": 2020,
+      "price_per_day": 192.21,
+      "location": "Khobar",
+      "availability": true
+    },
+    {
+      "id": 15,
+      "type": "SUV",
+      "model": "Escape",
+      "year": 2018,
+      "price_per_day": 447.68,
+      "location": "Jeddah",
+      "availability": true
+    },
+    {
+      "id": 16,
+      "type": "Luxury",
+      "model": "ES 350",
+      "year": 2019,
+      "price_per_day": 301.93,
+      "location": "Khobar",
+      "availability": false
+    },
+    {
+      "id": 17,
+      "type": "Luxury",
+      "model": "E-Class",
+      "year": 2023,
+      "price_per_day": 179.6,
+      "location": "Dammam",
+      "availability": false
+    },
+    {
+      "id": 18,
+      "type": "Sedan",
+      "model": "Camry",
+      "year": 2018,
+      "price_per_day": 182.61,
+      "location": "Dammam",
+      "availability": true
+    },
+    {
+      "id": 19,
+      "type": "SUV",
+      "model": "Rogue",
+      "year": 2023,
+      "price_per_day": 499.83,
+      "location": "Jeddah",
+      "availability": true
+    },
+    {
+      "id": 20,
+      "type": "Sedan",
+      "model": "Camry",
+      "year": 2020,
+      "price_per_day": 429.52,
+      "location": "Mecca",
+      "availability": false
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Nora Al-Amri"
+    },
+    {
+      "id": 2,
+      "name": "Nora Al-Otaibi"
+    },
+    {
+      "id": 3,
+      "name": "Sara Al-Qahtani"
+    },
+    {
+      "id": 4,
+      "name": "Ahmed Al-Otaibi"
+    },
+    {
+      "id": 5,
+      "name": "Layla Al-Saud"
+    },
+    {
+      "id": 6,
+      "name": "Ali Al-Qahtani"
+    },
+    {
+      "id": 7,
+      "name": "Nora Al-Ghamdi"
+    },
+    {
+      "id": 8,
+      "name": "Omar Al-Zahrani"
+    },
+    {
+      "id": 9,
+      "name": "Fatima Al-Otaibi"
+    },
+    {
+      "id": 10,
+      "name": "Mohammed Al-Amri"
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "car_id": 13,
+      "user_id": 5,
+      "start_date": "2025-09-13",
+      "end_date": "2025-09-15",
+      "price_paid": 557.47,
+      "status": "cancelled"
+    },
+    {
+      "id": 2,
+      "car_id": 1,
+      "user_id": 6,
+      "start_date": "2025-10-04",
+      "end_date": "2025-10-07",
+      "price_paid": 1128.15,
+      "status": "cancelled"
+    },
+    {
+      "id": 3,
+      "car_id": 2,
+      "user_id": 1,
+      "start_date": "2025-09-16",
+      "end_date": "2025-09-30",
+      "price_paid": 5202.66,
+      "status": "confirmed"
+    },
+    {
+      "id": 4,
+      "car_id": 3,
+      "user_id": 2,
+      "start_date": "2025-09-25",
+      "end_date": "2025-10-09",
+      "price_paid": 5305.44,
+      "status": "confirmed"
+    },
+    {
+      "id": 5,
+      "car_id": 1,
+      "user_id": 5,
+      "start_date": "2025-09-29",
+      "end_date": "2025-10-06",
+      "price_paid": 2121.53,
+      "status": "completed"
+    },
+    {
+      "id": 6,
+      "car_id": 13,
+      "user_id": 9,
+      "start_date": "2025-09-18",
+      "end_date": "2025-09-25",
+      "price_paid": 1482.31,
+      "status": "confirmed"
+    },
+    {
+      "id": 7,
+      "car_id": 15,
+      "user_id": 5,
+      "start_date": "2025-09-17",
+      "end_date": "2025-09-30",
+      "price_paid": 5235.47,
+      "status": "confirmed"
+    },
+    {
+      "id": 8,
+      "car_id": 9,
+      "user_id": 2,
+      "start_date": "2025-09-15",
+      "end_date": "2025-09-19",
+      "price_paid": 1039.39,
+      "status": "confirmed"
+    },
+    {
+      "id": 9,
+      "car_id": 13,
+      "user_id": 7,
+      "start_date": "2025-10-03",
+      "end_date": "2025-10-09",
+      "price_paid": 1624.45,
+      "status": "cancelled"
+    },
+    {
+      "id": 10,
+      "car_id": 4,
+      "user_id": 3,
+      "start_date": "2025-09-11",
+      "end_date": "2025-09-18",
+      "price_paid": 1028.02,
+      "status": "completed"
+    },
+    {
+      "id": 11,
+      "car_id": 12,
+      "user_id": 9,
+      "start_date": "2025-10-06",
+      "end_date": "2025-10-17",
+      "price_paid": 3981.35,
+      "status": "confirmed"
+    },
+    {
+      "id": 12,
+      "car_id": 3,
+      "user_id": 6,
+      "start_date": "2025-09-12",
+      "end_date": "2025-09-16",
+      "price_paid": 1525.28,
+      "status": "confirmed"
+    },
+    {
+      "id": 13,
+      "car_id": 3,
+      "user_id": 1,
+      "start_date": "2025-09-22",
+      "end_date": "2025-10-01",
+      "price_paid": 3546.91,
+      "status": "confirmed"
+    },
+    {
+      "id": 14,
+      "car_id": 10,
+      "user_id": 5,
+      "start_date": "2025-10-05",
+      "end_date": "2025-10-16",
+      "price_paid": 1854.04,
+      "status": "confirmed"
+    },
+    {
+      "id": 15,
+      "car_id": 4,
+      "user_id": 9,
+      "start_date": "2025-09-22",
+      "end_date": "2025-10-03",
+      "price_paid": 1799.57,
+      "status": "cancelled"
+    },
+    {
+      "id": 16,
+      "car_id": 4,
+      "user_id": 4,
+      "start_date": "2025-10-05",
+      "end_date": "2025-10-09",
+      "price_paid": 643.96,
+      "status": "confirmed"
+    },
+    {
+      "id": 17,
+      "car_id": 9,
+      "user_id": 3,
+      "start_date": "2025-10-06",
+      "end_date": "2025-10-07",
+      "price_paid": 302.84,
+      "status": "completed"
+    },
+    {
+      "id": 18,
+      "car_id": 2,
+      "user_id": 3,
+      "start_date": "2025-09-27",
+      "end_date": "2025-10-07",
+      "price_paid": 4508.32,
+      "status": "completed"
+    },
+    {
+      "id": 19,
+      "car_id": 10,
+      "user_id": 5,
+      "start_date": "2025-09-17",
+      "end_date": "2025-09-20",
+      "price_paid": 676.89,
+      "status": "confirmed"
+    },
+    {
+      "id": 20,
+      "car_id": 6,
+      "user_id": 1,
+      "start_date": "2025-09-26",
+      "end_date": "2025-10-07",
+      "price_paid": 3777.92,
+      "status": "confirmed"
+    },
+    {
+      "id": 21,
+      "car_id": 8,
+      "user_id": 5,
+      "start_date": "2025-09-09",
+      "end_date": "2025-09-12",
+      "price_paid": 830.26,
+      "status": "confirmed"
+    },
+    {
+      "id": 22,
+      "car_id": 18,
+      "user_id": 4,
+      "start_date": "2025-10-06",
+      "end_date": "2025-10-19",
+      "price_paid": 2072.57,
+      "status": "confirmed"
+    },
+    {
+      "id": 23,
+      "car_id": 17,
+      "user_id": 9,
+      "start_date": "2025-09-08",
+      "end_date": "2025-09-21",
+      "price_paid": 2147.15,
+      "status": "confirmed"
+    },
+    {
+      "id": 24,
+      "car_id": 13,
+      "user_id": 5,
+      "start_date": "2025-10-02",
+      "end_date": "2025-10-15",
+      "price_paid": 3107.65,
+      "status": "completed"
+    },
+    {
+      "id": 25,
+      "car_id": 10,
+      "user_id": 5,
+      "start_date": "2025-10-01",
+      "end_date": "2025-10-04",
+      "price_paid": 574.37,
+      "status": "confirmed"
+    },
+    {
+      "id": 26,
+      "car_id": 1,
+      "user_id": 4,
+      "start_date": "2025-10-04",
+      "end_date": "2025-10-16",
+      "price_paid": 5196.9,
+      "status": "confirmed"
+    },
+    {
+      "id": 27,
+      "car_id": 14,
+      "user_id": 7,
+      "start_date": "2025-09-17",
+      "end_date": "2025-09-22",
+      "price_paid": 812.12,
+      "status": "confirmed"
+    },
+    {
+      "id": 28,
+      "car_id": 14,
+      "user_id": 1,
+      "start_date": "2025-09-28",
+      "end_date": "2025-10-08",
+      "price_paid": 1573.06,
+      "status": "confirmed"
+    },
+    {
+      "id": 29,
+      "car_id": 4,
+      "user_id": 1,
+      "start_date": "2025-09-30",
+      "end_date": "2025-10-14",
+      "price_paid": 2631.12,
+      "status": "cancelled"
+    },
+    {
+      "id": 30,
+      "car_id": 4,
+      "user_id": 2,
+      "start_date": "2025-09-08",
+      "end_date": "2025-09-18",
+      "price_paid": 1571.73,
+      "status": "confirmed"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Riyadh Season",
+      "date": "2025-10-31",
+      "type": "Concert"
+    },
+    {
+      "id": 2,
+      "name": "TechX",
+      "date": "2025-11-22",
+      "type": "Conference"
+    },
+    {
+      "id": 3,
+      "name": "TechX",
+      "date": "2025-10-22",
+      "type": "Conference"
+    },
+    {
+      "id": 4,
+      "name": "Jeddah Season",
+      "date": "2025-09-10",
+      "type": "Concert"
+    },
+    {
+      "id": 5,
+      "name": "Saudi Food Show",
+      "date": "2025-11-19",
+      "type": "Exhibition"
+    },
+    {
+      "id": 6,
+      "name": "Al-Ula Festival",
+      "date": "2025-11-18",
+      "type": "Festival"
+    },
+    {
+      "id": 7,
+      "name": "Riyadh Season",
+      "date": "2025-11-02",
+      "type": "Concert"
+    },
+    {
+      "id": 8,
+      "name": "FII",
+      "date": "2025-09-16",
+      "type": "Conference"
+    },
+    {
+      "id": 9,
+      "name": "Janadriyah",
+      "date": "2025-11-27",
+      "type": "Festival"
+    },
+    {
+      "id": 10,
+      "name": "Al-Ula Festival",
+      "date": "2025-11-06",
+      "type": "Festival"
+    }
+  ],
+  "market_prices": [
+    {
+      "car_type": "Sedan",
+      "average_price": 145.55
+    },
+    {
+      "car_type": "SUV",
+      "average_price": 211.43
+    },
+    {
+      "car_type": "Truck",
+      "average_price": 235.22
+    },
+    {
+      "car_type": "Van",
+      "average_price": 294.22
+    },
+    {
+      "car_type": "Luxury",
+      "average_price": 529.39
+    }
+  ],
+  "map_views": [
+    {
+      "area_id": 1,
+      "cars_count": 15,
+      "booked_count": 5,
+      "best_price": 154.62
+    },
+    {
+      "area_id": 2,
+      "cars_count": 29,
+      "booked_count": 19,
+      "best_price": 173.48
+    },
+    {
+      "area_id": 3,
+      "cars_count": 13,
+      "booked_count": 12,
+      "best_price": 103.81
+    },
+    {
+      "area_id": 4,
+      "cars_count": 22,
+      "booked_count": 17,
+      "best_price": 125.69
+    },
+    {
+      "area_id": 5,
+      "cars_count": 5,
+      "booked_count": 0,
+      "best_price": 184.47
+    }
+  ]
+}
