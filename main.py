@@ -241,7 +241,7 @@ class DummyDataGenerator:
 
 # Add function to fetch cars from external API
 def fetch_external_cars():
-    url = "https://sarb-main-i26vg9.laravel.cloud/api/v1/car"
+    url = "https://powderblue-jaguar-171084.hostingersite.com/public/api/v1/car"
     headers = {
         "Authorization": "Bearer 55|IQaLyRxU3h7SAAqI6a52zdqKSDZ5WQHB9tKWKvKCbeb9fd6e"
     }
@@ -257,7 +257,7 @@ def fetch_external_cars():
 
 # Add function to fetch users from external API
 def fetch_external_users():
-    url = "https://sarb-main-i26vg9.laravel.cloud/api/v1/user"
+    url = "https://powderblue-jaguar-171084.hostingersite.com/public/api/v1/user"
     headers = {
         "Authorization": "Bearer 55|IQaLyRxU3h7SAAqI6a52zdqKSDZ5WQHB9tKWKvKCbeb9fd6e"
     }
@@ -273,7 +273,7 @@ def fetch_external_users():
 
 # Add function to fetch average prices from external API
 def fetch_external_average_prices():
-    url = "https://sarb-main-i26vg9.laravel.cloud/api/v1/car/average-price"
+    url = "https://powderblue-jaguar-171084.hostingersite.com/public/api/v1/car/average-price"
     headers = {
         "Authorization": "Bearer 55|IQaLyRxU3h7SAAqI6a52zdqKSDZ5WQHB9tKWKvKCbeb9fd6e"
     }
@@ -289,7 +289,7 @@ def fetch_external_average_prices():
 
 # Add function to fetch bookings from external API
 def fetch_external_bookings():
-    url = "https://sarb-main-i26vg9.laravel.cloud/api/v1/booking"
+    url = "https://powderblue-jaguar-171084.hostingersite.com/public/api/v1/booking"
     headers = {
         "Authorization": "Bearer 55|IQaLyRxU3h7SAAqI6a52zdqKSDZ5WQHB9tKWKvKCbeb9fd6e"
     }

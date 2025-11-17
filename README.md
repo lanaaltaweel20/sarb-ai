@@ -100,10 +100,10 @@ This is the AI backend service for the SARB (Saudi Arabia Ride Booking) car shar
 ## External API Integration
 
 This service integrates with the main SARB API to fetch real data:
-- **Car Endpoint**: `https://sarb-main-i26vg9.laravel.cloud/api/v1/car`
-- **User Endpoint**: `https://sarb-main-i26vg9.laravel.cloud/api/v1/user`
-- **Market Prices Endpoint**: `https://sarb-main-i26vg9.laravel.cloud/api/v1/car/average-price`
-- **Booking Endpoint**: `https://sarb-main-i26vg9.laravel.cloud/api/v1/booking`
+- **Car Endpoint**: `https://powderblue-jaguar-171084.hostingersite.com/public/api/v1/car`
+- **User Endpoint**: `https://powderblue-jaguar-171084.hostingersite.com/public/api/v1/user`
+- **Market Prices Endpoint**: `https://powderblue-jaguar-171084.hostingersite.com/public/api/v1/car/average-price`
+- **Booking Endpoint**: `https://powderblue-jaguar-171084.hostingersite.com/public/api/v1/booking`
 - **Authentication**: Bearer token authentication
 - **Data Transformation**: External data is transformed to match our internal models
 

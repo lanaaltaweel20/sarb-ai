@@ -242,10 +242,10 @@ Identifies demand hotspots across all areas for strategic planning.
 
 ### Real-time Data
 All AI services fetch real-time data from external APIs to ensure accuracy:
-- Cars data from: `https://sarb-main-i26vg9.laravel.cloud/api/v1/car`
-- Users data from: `https://sarb-main-i26vg9.laravel.cloud/api/v1/user`
-- Bookings data from: `https://sarb-main-i26vg9.laravel.cloud/api/v1/booking`
-- Market prices from: `https://sarb-main-i26vg9.laravel.cloud/api/v1/car/average-price`
+- Cars data from: `https://powderblue-jaguar-171084.hostingersite.com/public/api/v1/car`
+- Users data from: `https://powderblue-jaguar-171084.hostingersite.com/public/api/v1/user`
+- Bookings data from: `https://powderblue-jaguar-171084.hostingersite.com/public/api/v1/booking`
+- Market prices from: `https://powderblue-jaguar-171084.hostingersite.com/public/api/v1/car/average-price`
 
 ### Authentication
 All external API calls use Bearer token authentication:
