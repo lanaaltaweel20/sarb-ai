@@ -17,12 +17,17 @@ This is the AI backend service for the SARB (Saudi Arabia Ride Booking) car shar
    pip install -r requirements.txt
    ```
 
-2. **Run the server**:
+2. **For deployment environments (to avoid compilation issues)**:
+   ```bash
+   pip install -r requirements.txt -c constraints.txt
+   ```
+
+3. **Run the server**:
    ```bash
    uvicorn main:app --reload
    ```
 
-3. **Access the API docs**:
+4. **Access the API docs**:
    - Interactive API documentation: http://localhost:8000/docs
    - Alternative documentation: http://localhost:8000/redoc
 
