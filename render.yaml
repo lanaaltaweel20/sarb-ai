@@ -1,7 +1,7 @@
 services:
   - type: web
     name: sarb-ai
-    env: python
-    buildCommand: "pip install --python-version 3.10 -r requirements.txt"
+    runtime: python
+    pythonVersion: 3.10.13
+    buildCommand: "pip install -r requirements.txt"
     startCommand: "uvicorn main:app --host 0.0.0.0 --port $PORT"
-    runtime: python3.10
