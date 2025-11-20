@@ -1,11 +1,30 @@
-fastapi>=0.104.1  # أو حتى أحدث إذا تريد
+# Core web framework
+fastapi>=0.104.1
+
+# ASGI server
 uvicorn>=0.32.0
-pydantic==2.4.2       # إذا لا تريد تغييره
+
+# Data validation
+pydantic==2.4.2
+
+# Data analysis
 pandas>=2.2.3
 numpy>=2.1.0
-scikit-learn==1.3.0    # أو إصدار قريب، بشرط توافق numpy
+
+# Machine learning
+scikit-learn==1.3.0
+
+# File uploads
 python-multipart==0.0.6
+
+# JWT and cryptography
 python-jose[cryptography]>=3.5.0
+
+# Password hashing
 passlib[bcrypt]>=1.7.4
+
+# Environment variables
 python-dotenv==1.0.0
+
+# HTTP requests
 requests==2.31.0
