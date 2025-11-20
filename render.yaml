@@ -3,5 +3,5 @@ services:
     name: sarb-ai
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python -m main"
+    startCommand: "python startup.py"
     runtime: python3.10
