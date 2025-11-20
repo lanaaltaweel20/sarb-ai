@@ -1,11 +1,11 @@
-fastapi==0.104.1
-uvicorn==0.24.0
-pydantic==2.4.2
-pandas==1.5.3
-numpy==1.24.3
-scikit-learn==1.3.0
+fastapi>=0.104.1  # أو حتى أحدث إذا تريد
+uvicorn>=0.32.0
+pydantic==2.4.2       # إذا لا تريد تغييره
+pandas>=2.2.3
+numpy>=2.1.0
+scikit-learn==1.3.0    # أو إصدار قريب، بشرط توافق numpy
 python-multipart==0.0.6
-python-jose[cryptography]==3.3.0
-passlib[bcrypt]==1.7.4
+python-jose[cryptography]>=3.5.0
+passlib[bcrypt]>=1.7.4
 python-dotenv==1.0.0
 requests==2.31.0
