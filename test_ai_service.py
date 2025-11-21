@@ -1,34 +1,53 @@
 import requests
 import json
 
-def test_ai_service():
-    """Test the AI service for booking cancellation"""
-    # First get available bookings
-    bookings_url = "http://localhost:8000/api/bookings"
+def test_ai_services():
+    base_url = "http://localhost:8001"
     
+    print("Testing AI Services...")
+    
+    # Test Algorithm 2: Price recommendation
+    print("\n1. Testing Price Recommendation (Algorithm 2)...")
     try:
-        response = requests.get(bookings_url)
+        response = requests.get(f"{base_url}/api/ai/recommend-price/40")
         response.raise_for_status()
-        bookings = response.json()
-        
-        if bookings:
-            # Test with the first booking
-            booking_id = bookings[0]['id']
-            ai_url = f"http://localhost:8000/api/ai/can-cancel/{booking_id}"
-            
-            ai_response = requests.get(ai_url)
-            ai_response.raise_for_status()
-            ai_data = ai_response.json()
-            
-            print(f"AI Service Test Results for Booking ID {booking_id}:")
-            print(json.dumps(ai_data, indent=2))
-        else:
-            print("No bookings available for testing")
-            
-    except requests.exceptions.RequestException as e:
-        print(f"Error testing AI service: {e}")
-    except json.JSONDecodeError as e:
-        print(f"Error parsing JSON response: {e}")
+        result = response.json()
+        print(f"✓ Price Recommendation for Car ID 40:")
+        print(f"  Car ID: {result['car_id']}")
+        print(f"  Current Price: {result['current_price']}")
+        print(f"  Recommended Price: {result['recommended_price']}")
+        print(f"  Reason: {result['reason']}")
+    except Exception as e:
+        print(f"✗ Price Recommendation Error: {e}")
+    
+    # Test Algorithm 1: Initial pricing recommendation
+    print("\n2. Testing Initial Pricing Recommendation (Algorithm 1)...")
+    try:
+        response = requests.get(f"{base_url}/api/ai/recommend-initial-price?car_type=Sedan&location=Riyadh")
+        response.raise_for_status()
+        result = response.json()
+        print(f"✓ Initial Pricing Recommendation:")
+        print(f"  Car Type: {result['car_type']}")
+        print(f"  Location: {result['location']}")
+        print(f"  Market Average: {result['market_average_price']}")
+        print(f"  Recommended Price: {result['recommended_initial_price']}")
+        print(f"  Reason: {result['reason']}")
+    except Exception as e:
+        print(f"✗ Initial Pricing Recommendation Error: {e}")
+    
+    # Test Cancellation Policy
+    print("\n3. Testing Cancellation Policy...")
+    try:
+        response = requests.get(f"{base_url}/api/ai/can-cancel/40")
+        response.raise_for_status()
+        result = response.json()
+        print(f"✓ Cancellation Policy for Booking 40:")
+        print(f"  Can Cancel: {result['can_cancel']}")
+        print(f"  Reason: {result['reason']}")
+    except Exception as e:
+        print(f"✗ Cancellation Policy Error: {e}")
+    
+    print("\n=== AI Services Test Complete ===")
 
 if __name__ == "__main__":
-    test_ai_service()
+    test_ai_services()
