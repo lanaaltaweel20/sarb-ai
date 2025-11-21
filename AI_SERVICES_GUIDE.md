@@ -250,7 +250,7 @@ All AI services fetch real-time data from external APIs to ensure accuracy:
 ### Authentication
 All external API calls use Bearer token authentication:
 ```
-Authorization: Bearer 55|IQaLyRxU3h7SAAqI6a52zdqKSDZ5WQHB9tKWKvKCbeb9fd6e
+Authorization: Bearer 28|KKyjTwdNzLQBjb44Iw8ZCabGjr9zWVIiMfIXQVQS36aa992f
 ```
 
 ### Error Handling
